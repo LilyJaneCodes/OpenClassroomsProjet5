@@ -1,8 +1,10 @@
+import './Home.scss'
+import Banner from '../../components/Banner/Banner'
+
 function Home() {
   return (
-    <main>
-      <h1>Bienvenue sur Kasa</h1>
-      <p>Page d'accueil</p>
+    <main className="home">
+      <Banner />
     </main>
   );
 }

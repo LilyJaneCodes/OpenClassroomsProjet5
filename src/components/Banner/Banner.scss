@@ -1,0 +1,19 @@
+.banner {
+  height: 223px;
+  border-radius: 25px;
+
+  background-image: url('../../assets/banner/Image_Banner.png');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px black;
+  }
+}

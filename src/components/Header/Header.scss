@@ -2,5 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+
+  padding: 45px 0px;
+
+  &__logo {
+    width: 170px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 57px;
+
+    a {
+      color: #000;
+      font-size: 24px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
 }
