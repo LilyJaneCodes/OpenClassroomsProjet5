@@ -13,4 +13,30 @@
     &__text {
     font-size: 20px;
   }
+
+    span {
+    display: inline;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 40px;
+    padding: 60px 15px;
+
+    &__logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 1.4;
+      margin: 0 auto;
+
+      span {
+        display: block;
+      }
+    }
+  }
 }

@@ -11,7 +11,7 @@ function Footer() {
       />
       
       <p className="footer__text">
-        © 2020 Kasa. All rights reserved
+        © 2020 Kasa. All <span>rights reserved</span>
       </p>
     </footer>
   );

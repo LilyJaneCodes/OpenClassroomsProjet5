@@ -40,3 +40,10 @@
     font-size: 18px;
   }
 }
+
+@media (max-width: 768px) {
+  .card {
+    aspect-ratio: auto;
+    height: 255px;
+  }
+}
