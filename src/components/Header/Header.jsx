@@ -1,4 +1,5 @@
 import "./Header.scss";
+import { NavLink } from "react-router-dom";
 import logoKasa from '../../assets/header/logo_kasa.png'
 
 function Header() {
@@ -11,8 +12,8 @@ function Header() {
       />
 
       <nav className="header__nav">
-        <a href="#">Accueil</a>
-        <a href="#">A propos</a>
+        <NavLink to="/" end>Accueil</NavLink>
+        <NavLink to="/a-propos">A propos</NavLink>
       </nav>
     </header>
   );

@@ -1,3 +1,14 @@
 .home {
-  padding: 0;
+  width: 100%;
+}
+
+.housing-gallery {
+  margin-top: 40px;
+  padding: 50px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
 }

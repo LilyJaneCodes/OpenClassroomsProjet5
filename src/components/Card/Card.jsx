@@ -1,19 +1,22 @@
 import './Card.scss'
-import cardImage from '../../assets/hero.png'
+import { Link } from 'react-router-dom'
 
-function Card() {
+function Card({ logement }) {
   return (
-    <article className="card">
+    <Link
+      to={`/logement/${logement.id}`}
+      className="card"
+    >
       <img
-        src={cardImage}
-        alt=""
+        src={logement.cover}
+        alt={logement.title}
         className="card__image"
       />
 
       <h2 className="card__title">
-        Appartement cosy
+        {logement.title}
       </h2>
-    </article>
+    </Link>
   )
 }
 
