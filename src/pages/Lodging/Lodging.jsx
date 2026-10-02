@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import logements from "../../data/logements.json";
 import Slideshow from "../../components/Slideshow/Slideshow.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
@@ -13,7 +13,7 @@ function Lodging() {
   const logement = logements.find((logement) => logement.id === id);
 
   if (!logement) {
-    return <p>Logement introuvable</p>;
+    return <Navigate to="/404" replace />;
   }
 
   return (
