@@ -61,3 +61,34 @@
   color: white;
   font-size: 22px;
 }
+
+@media (max-width: 768px) {
+  .slideshow {
+    height: 350px;
+    border-radius: 10px;
+  }
+
+    .slideshow button {
+    width: 20px;
+    height: 20px;
+  }
+
+    .slideshow button::before {
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+  }
+
+    .slideshow button:first-of-type {
+    left: 20px;
+  }
+
+    .slideshow button:last-of-type {
+    right: 20px;
+  }
+
+  .slideshow p {
+  display: none;
+}
+}

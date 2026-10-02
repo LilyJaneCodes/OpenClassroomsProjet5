@@ -51,6 +51,11 @@
   text-align: right;
 }
 
+.lodging-host p span {
+  display: block;
+  line-height: 1.5;
+}
+
 .lodging-host img {
   width: 64px;
   height: 64px;
@@ -91,5 +96,74 @@
 @media (max-width: 768px) {
   .lodging {
     width: calc(100% - 40px);
+  }
+
+    .lodging-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+    .lodging-info h1 {
+    margin: 10px 0 5px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+    .lodging-info p {
+    margin: 0 0 15px;
+    font-size: 14px;
+  }
+
+    .lodging-tags {
+    gap: 10px;
+  }
+
+    .lodging-tags span {
+    padding: 4px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+    .lodging-host-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+    .lodging-host {
+    gap: 10px;
+  }
+
+    .lodging-host p {
+    font-size: 15px;
+  }
+
+    .lodging-host img {
+    width: 52px;
+    height: 52px;
+  }
+
+    .lodging-rating {
+    margin-top: 0;
+    text-align: left;
+  }
+
+    .lodging-rating img {
+    width: 22px;
+    height: 22px;
+  }
+
+    .lodging-collapses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+    .lodging-collapses .collapse {
+    width: 100%;
   }
 }

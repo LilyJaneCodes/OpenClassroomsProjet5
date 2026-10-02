@@ -39,7 +39,11 @@ function Lodging() {
         <div className="lodging-host-info">
 
           <div className="lodging-host">
-            <p>{logement.host.name}</p>
+              <p>
+                {logement.host.name.split(" ").map((namePart, index) => (
+                  <span key={index}>{namePart}</span>
+                ))}
+              </p>
 
             <img
               src={logement.host.picture}
@@ -50,6 +54,7 @@ function Lodging() {
           <div className="lodging-rating">
             {[1, 2, 3, 4, 5].map((star) => (
               <img
+                key={star}
                 src={star <= Number(logement.rating) ? starFull : starEmpty}
                 alt=""
               />
