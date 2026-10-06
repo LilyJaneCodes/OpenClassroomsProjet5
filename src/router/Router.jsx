@@ -5,32 +5,37 @@ import Lodging from "../pages/Lodging/Lodging.jsx";
 import NotFound from "../pages/NotFound/NotFound.jsx";
 import Layout from "../layouts/Layout.jsx";
 
-const router = createBrowserRouter([
-  {
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/a-propos",
-        element: <About />,
-      },
-      {
-        path: "/logement/:id",
-        element: <Lodging />,
-      },
-      {
-        path: "/404",
-        element: <NotFound />,
-      },
-      {
-        path: "*",
-        element: <NotFound />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/a-propos",
+          element: <About />,
+        },
+        {
+          path: "/logement/:id",
+          element: <Lodging />,
+        },
+        {
+          path: "/404",
+          element: <NotFound />,
+        },
+        {
+          path: "*",
+          element: <NotFound />,
+        },
+      ],
+    },
+  ],
+  { 
+    basename: "/OpenClassroomsProjet5", 
+  }
+);
 
 export default router;
