@@ -70,6 +70,7 @@
 .lodging-rating {
   margin-top: 20px;
   text-align: right;
+  white-space: nowrap;
 }
 
 .lodging-rating span {
@@ -87,15 +88,9 @@
   flex: 1;
 }
 
-@media (min-width: 769px) and (max-width: 1100px) {
-  .lodging {
-    width: calc(100% - 80px);
-  }
-}
-
 @media (max-width: 768px) {
   .lodging {
-    width: calc(100% - 40px);
+    width: 100%;
   }
 
     .lodging-details {

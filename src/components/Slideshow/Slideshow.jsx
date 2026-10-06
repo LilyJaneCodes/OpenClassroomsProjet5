@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Slideshow.scss";
 
 function Slideshow({ pictures }) {
@@ -20,6 +20,24 @@ function Slideshow({ pictures }) {
       setCurrentIndex(currentIndex - 1);
     }
   };
+
+  useEffect(() => { 
+    const handleKeyDown = (event) => { 
+      if (event.key === "ArrowLeft") { 
+        previousImage(); 
+      } 
+      
+      if (event.key === "ArrowRight") { 
+        nextImage(); 
+      } 
+    }; 
+    
+    window.addEventListener("keydown", handleKeyDown); 
+    
+    return () => { 
+      window.removeEventListener("keydown", handleKeyDown); 
+    }; 
+  }, [currentIndex]);
 
   return (
     <div className="slideshow">

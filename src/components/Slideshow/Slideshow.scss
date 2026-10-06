@@ -91,4 +91,10 @@
   .slideshow p {
   display: none;
 }
+
+@media (max-width: 375px) {
+  .slideshow {
+    height: 245px;
+  }
+}
 }
