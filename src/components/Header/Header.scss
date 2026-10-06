@@ -63,4 +63,22 @@
             }
         }
     }
+
+    @media (max-width: 340px) {
+        .header {
+            padding: 20px 15px;
+
+            &__logo {
+                width: 120px;
+            }
+
+            &__nav {
+                gap: 12px;
+
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }

@@ -37,7 +37,14 @@
     margin: 0;
     padding: 20px;
     color: white;
-    font-size: 18px;
+    font-size: clamp(18px, 1.25vw, 24px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 950px) {
+  .card__title {
+    padding: 15px;
+    font-size: 16px;
   }
 }
 

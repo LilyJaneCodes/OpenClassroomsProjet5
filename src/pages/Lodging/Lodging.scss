@@ -1,0 +1,164 @@
+.lodging {
+  width: 100%;
+}
+
+.lodging-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.lodging-info h1 {
+  margin: 20px 0 5px;
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.lodging-info p {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.lodging-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lodging-tags span {
+  padding: 6px 30px;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.lodging-host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lodging-host p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
+  text-align: right;
+}
+
+.lodging-host p span {
+  display: block;
+  line-height: 1.5;
+}
+
+.lodging-host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.lodging-host-info {
+  padding-top: 20px;
+}
+
+.lodging-rating {
+  margin-top: 20px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.lodging-rating span {
+  color: #ff6060;
+  font-size: 28px;
+  margin-left: 5px;
+}
+
+.lodging-collapses {
+  display: flex;
+  gap: 5%;
+}
+
+.lodging-collapses .collapse {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .lodging {
+    width: 100%;
+  }
+
+    .lodging-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+    .lodging-info h1 {
+    margin: 10px 0 5px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+    .lodging-info p {
+    margin: 0 0 15px;
+    font-size: 14px;
+  }
+
+    .lodging-tags {
+    gap: 10px;
+  }
+
+    .lodging-tags span {
+    padding: 4px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+    .lodging-host-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+    .lodging-host {
+    gap: 10px;
+  }
+
+    .lodging-host p {
+    font-size: 15px;
+  }
+
+    .lodging-host img {
+    width: 52px;
+    height: 52px;
+  }
+
+    .lodging-rating {
+    margin-top: 0;
+    text-align: left;
+  }
+
+    .lodging-rating img {
+    width: 22px;
+    height: 22px;
+  }
+
+    .lodging-collapses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+    .lodging-collapses .collapse {
+    width: 100%;
+  }
+}
